@@ -15,7 +15,7 @@ import java.sql.SQLException;
 public class LoginServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.setContentType("text/json; charsset=utf-8");
+        resp.setContentType("text/json; charset=utf-8");
         String username = req.getParameter("username");
         String password = req.getParameter("password");
         System.out.println("username========== " + username);

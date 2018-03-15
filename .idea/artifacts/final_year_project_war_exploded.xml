@@ -6,6 +6,10 @@
         <element id="directory" name="classes">
           <element id="module-output" name="final_year_project" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.45" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.0" />
+        </element>
       </element>
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/target/final-year-project/META-INF/MANIFEST.MF" />

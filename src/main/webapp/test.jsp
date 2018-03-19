@@ -1,16 +1,16 @@
 <%--
   Created by IntelliJ IDEA.
   User: shen
-  Date: 2018/3/16
-  Time: 0:38
+  Date: 2018/3/19
+  Time: 21:10
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Login Success</title>
+    <title>Test</title>
 </head>
 <body>
-    Login Success, Welcome <%=request.getAttribute("username")%>
+    You got it!
 </body>
 </html>

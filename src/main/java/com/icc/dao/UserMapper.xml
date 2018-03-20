@@ -5,4 +5,8 @@
     <select id="findByUsername" parameterType="string" resultType="User">
         SELECT * FROM user_login WHERE username=#{username}
     </select>
+    
+    <insert id="addUser" parameterType="string">
+        INSERT INTO user_login(username, password) VALUES (#{username}, #{password})
+    </insert>
 </mapper>

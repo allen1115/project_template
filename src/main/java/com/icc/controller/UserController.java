@@ -1,15 +1,15 @@
 package com.icc.controller;
 
-import com.icc.dao.UserDao;
 import com.icc.pojo.User;
 import com.icc.service.UserService;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  *  用户登陆控制器
@@ -42,6 +42,16 @@ public class UserController {
             mav.setViewName("index");
             return mav;
         }
+    }
+
+    @RequestMapping(value = "/addUser", method = RequestMethod.POST)
+    @ResponseBody
+    public Object addUser(@RequestBody User user) {
+        int num = userService.addUser(user);
+        System.out.println(num);
+        Map<String, Object> map = new HashMap();
+        map.put("num", num);
+        return map;
     }
 
     @RequestMapping(value = "/test")
